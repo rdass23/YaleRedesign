@@ -1,0 +1,546 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	height: 100%;
+	background: #FBFBFB;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.homeMain{
+	min-height: 100%;
+	overflow: hidden;
+	float: left;
+	margin: 0px 20px 50px 20px;
+	padding-bottom: 30px;
+	border-bottom: solid black 1px;
+}
+.courseMain{
+	overflow: hidden;
+	min-height: 100%;
+	min-width: 100%;
+	margin-top: 100px;
+}
+/*---------HEADER + navBAR---------*/
+/* header responsiveness help via https://www.youtube.com/watch?v=gt8zOLQ8A0w */
+header{
+	position: absolute;
+	font-size: 18px;
+	top: 0;
+	left: 0;
+	padding: 0 15px;
+	background: #b8dcf9;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 1px 0px 8px 3px black;
+}
+header .menu{
+	color: black;
+	height: 50px;
+	line-height: 50px;
+	float: right;
+}
+header nav{
+	float: left;
+}
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+header nav ul li{
+	list-style: none;
+	position: relative;
+}
+
+header nav ul li a{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+header nav ul li a:hover{
+	text-decoration: underline; 
+	color: #285cd6;
+}
+header nav ul li ul{
+	position: absolute;
+	left: 0;
+	background: #b8dcf9;
+	opacity: .9;
+	display: none;
+}
+header nav ul li ul li a{
+	text-transform: none;
+}
+header nav ul li:hover ul{
+	display: inline-block;
+	width: 170px;
+	font-size: 14px;
+}
+header nav ul li ul li:hover{
+	font-size: 16px;
+}
+/*-----MENU BUTTON-----*/
+/* all menu help via youtube video: https://www.youtube.com/watch?v=gt8zOLQ8A0w */
+.menu{
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	cursor: pointer;
+	display: none;
+}
+/*-----------SLIDER----------*/
+/*slider styling via youtube video: https://www.youtube.com/watch?v=pGHOaY4dhAA */
+#slider{
+	padding-top: 50px;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+#slider figure{
+	z-index: -1000;
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+
+#slider figure img{
+	width: 20%;
+	float: left;
+}
+@keyframes slider{
+	0% {
+		left:0;
+	}
+	20%{
+		left:0;
+	}
+	25%{
+		left:-100%;
+	}
+	45%{
+		left:-100%;
+	}
+	50%{
+		left:-200%;
+	}
+	70%{
+		left:-200%;
+	}
+	75%{
+		left:-300%;
+	}
+	95%{
+		left:-300%;
+	}
+	100%{
+		left:-400%;
+	}
+
+}
+/*----------MAIN CONTENT--------*/
+.content{
+	width: 75%;
+	height: 100%;
+	float: left;
+}
+.content h3{
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+}
+/*-----------GOOGLE CALENDAR STYLES-------------*/
+.calendar{
+	float: right;
+	padding-top: 5px;
+	margin: 10px;
+	height: 100%;
+}
+/*-------------TWITTER FEED STYLES-------------*/
+.social{
+	float: right;
+	padding-top: 5px;
+	margin: 10px;
+	height: 100%;
+}
+/*----------------------FAQ STYLES------------------*/
+/* everything in homeFAQ / expandable / expandP help found from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible */
+.homeFAQ h3{
+	margin: 20px;
+	text-align: center;
+}
+.expandable{
+	background: #FBFBFB;
+	cursor: pointer;
+	display: block;
+	padding: 18px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+.expandable:hover{
+	color: #5078ba;
+}
+.expandable h4{
+	align-content: center;
+}
+.expandable:after{
+	content: '\002B'; /* unicode character for a "+". Show this before expanding the paragraph */
+	margin: 5px;
+	font-weight: bold;
+}
+.active:after{ /* when an area is open show a "-". */
+	content: "\2212"; /* unicode character for "-" */
+}
+.expandP{
+	margin-left: 5em;
+	margin-right: 20px;
+	font-size: 15px;
+	display: none;
+}
+/*---------------FORM STYLES------------*/
+.form{
+	width: 100%;
+	height: 100%;
+	margin: 20px;
+	padding-bottom: 20px;
+
+}
+.form textarea{
+	width: 250px;
+	height: 150px;
+	border-radius: 5px;
+	outline: none;
+	font-size: 14px;
+	padding: 5px;
+}
+.form h3{
+	text-align: center;
+	padding: 20px;
+}
+.form button{
+	padding: 3px;
+	font-size: 12px;
+}
+/*--------------COURSE LIST STYLES---------------*/
+.courseList{
+	display: block;
+	float: left;
+	width: 15%
+}
+.courseList h1{
+	text-align: left;
+	margin: 10px;
+}
+.courseList ul li{
+	list-style: none;
+	padding-bottom: 25px;
+}
+.courseList ul li a{
+	text-decoration: none;
+	margin: 0px 0px 0px 10px;
+	color: black;
+}
+.courseList ul li a:hover{
+	text-decoration: underline;
+	color: #285cd6;;
+}
+/*--------------COURSE INFO STYLES-----------------*/
+.courseInfo{
+	text-align: center;
+	margin: 10px 0px 10px 10px;
+	width: 78%;
+	height: 100%;
+	margin: 10px;
+	float: right;
+}
+.courseInfo h2{
+	margin-bottom: 15px;
+}
+.course-pics{
+	margin-top: 10px;
+}
+/*---------FOOTER-------------*/
+footer{
+	width: 100%;
+	min-height: 150px;
+	height: auto;
+	box-sizing: border-box;
+	overflow: hidden;
+	background-color: #474747;
+	display: flex;
+	flex-wrap: wrap;
+	bottom: 0;
+}
+footer nav{
+	width: 100%;
+	float: left;
+	color: black;
+}
+footer nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+footer nav ul li{
+	list-style: none;
+	position: relative;
+	margin: 10px 0px 10px 0px;
+}
+
+footer nav ul li a{
+	display: block;
+	line-height: 25px;
+	padding: 0 20px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+footer nav ul li a:hover{
+	text-decoration: underline; 
+	color: lightblue;
+}
+footer nav ul li ul{
+	display: block;
+}
+footer nav ul li ul li a{
+	text-transform: none;
+}
+footer .submenu i{
+	display: none;
+	margin: 5px;
+	font-size: 12px;
+}
+.socialIcons{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.socialIcons ul{
+	margin: 0;
+	padding: 0;
+}
+.socialIcons ul li{
+	display: inline-block;
+	margin-right: 10px;
+	padding-bottom: 10px;
+	float: right;
+}
+.socialIcons ul li a{
+	color: #fff;
+	display: block;
+	font-size: 18px;
+}
+#twitter{
+	background-color: #1DA1F2;
+	width: 36px;
+	height: 28px;
+	padding-top: 10px;
+	text-align: center;
+	justify-content: center;
+	border-radius: 55%;
+}
+#facebook{
+	background-color: #3b5998;
+	width: 36px;
+	height: 28px;
+	padding-top: 10px;
+	text-align: center;
+	justify-content: center;
+	border-radius: 55%;
+}
+/*-------------RESPONSIVE SITE STLYING--------------*/
+/* help generated from: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s */
+/* resonsive site help for hidding and displaying content via: https://www.youtube.com/watch?v=gt8zOLQ8A0w /*
+/*-------------MOBILE STYLES--------------*/
+@media only screen and (max-width: 500px){ /* max screen width of a "mobile" device is 500px because tablets usually won't go below this. 
+											  anything below 500px will be considered a mobile device bc of this */
+  header{
+  	padding: 0 20px;
+  }
+  .menu{
+  	display: block;
+  }
+  header nav{
+  	display: none;
+  	position: absolute;
+  	width: 100%;
+  	height: calc(100vh - 50px);
+  	background: #b8dcf9;
+  	top: 70px;
+  	left: 0;
+  }
+  header nav ul{
+  	display: flex;
+  	display: block;
+  	text-align: center;
+  }
+  header nav ul li{
+  	border-bottom: solid 0.2px black;
+  }
+  header nav ul li ul{
+  	position: relative;
+  	background: transparent;
+  }
+  header nav ul li ul li:last-child{
+  	border-bottom: none;
+  }
+  .content{
+  	width: 100%;
+  }
+  .content article p{
+  	text-align: center;
+  }
+  .calendar{
+  	width: 100%;
+  	float: left;
+  	margin-left: 20px;
+  }
+  .social{
+  	float: left;
+  	margin-left: 20px;
+  }
+   footer .submenu i{
+  	display: inline-block;
+  }
+  .homeFAQ{
+  	text-align: center;
+  }
+  .homeFAQ p{
+  	margin: 0px 20px 0px 20px;
+  	text-align: center;
+  }
+  .form{
+  	text-align: center;
+  }
+  footer nav ul{
+  	display: block;
+  	text-align: center;
+  }
+  footer nav ul li ul{
+  	display: none;
+  }
+  .socialIcons{
+  	margin-right: 38%;
+  }
+  .courseList, .courseList h1{
+  	width: 100%;
+  	text-align: center;
+  }
+  .courseList ul li{
+  	padding: 0;
+  	line-height: 45px;
+  	border-bottom: solid black 1px;
+  }
+  .courseInfo{
+  	width: 100%;
+  }
+  .courseInfo p, .courseInfo h2{
+  	text-align: center;
+  	margin-left: 20px;
+  }
+  .course-pics{
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 55%;
+  }
+}
+/*--------------TABLET STYLES-------------*/
+@media only screen and (min-width: 501px) and (max-width: 960px) { /* 501 because mobile max is 500, need 1 above. Tablets screen sizes won't go below
+																	  500px, nor will it go above 960px (which is a desktop/laptop screen) so this should
+																	  be our range. */
+  header{
+  	padding: 0 20px;
+  }
+  .menu{
+  	display: block;
+  }
+  header nav{
+  	display: none;
+  	position: absolute;
+  	width: 100%;
+  	height: calc(100vh - 50px);
+  	background: #b8dcf9;
+  	top: 50px;
+  	left: 0;
+  }
+  header nav ul{
+  	display: block;
+  	text-align: center;
+  }
+  header nav ul li{
+  	border-bottom: solid 0.2px black;
+  }
+  header nav ul li ul{
+  	position: relative;
+  	background-color: transparent;
+  }
+    header nav ul li ul li:last-child{
+  	border-bottom: none;
+  }
+  .content{
+  	width: 100%;
+  }
+  .calendar{
+  	width: 100%;
+  	float: left;
+  }
+  .social{
+  	float: left;
+  }
+  .homeFAQ{
+  	text-align: center;
+  }
+  .homeFAQ p{
+  	text-align: left;
+  }
+  .form{
+  	text-align: center;
+  }
+  footer .submenu i{
+  	display: inline-block;
+  }
+  footer nav ul{
+  	display: block;
+  	text-align: center;
+  }
+  footer nav ul li ul{
+  	display: none;
+  }
+  .socialIcons{
+  	margin-right: 44%;
+  }
+  .courseList, .courseList h1{
+  	width: 100%;
+  	text-align: center;
+  }
+  .courseList ul li{
+  	width: 100%;
+  	margin: 0;
+  	padding: 0;
+  	line-height: 45px;
+  	border-bottom: solid black 1px;
+  }
+  .courseInfo{
+  	width: 100%;
+  }
+  .courseInfo p, .courseInfo h2{
+  	text-align: center;
+  	margin-left: 40px;
+  }
+  .course-pics{
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 55%;
+  }
+}

@@ -1,0 +1,6 @@
+Wireframe differences:
+All header navigation items for the tablet and mobile display are displayed in a menu. Click on the menu and then the navigation items will appear centred, one at a time. Changed this because the way it was depicted in the wireframe was messy and not as consistent as placing everything in a menu button. 
+
+Footer navigation items changed to appear centred, each on a new line. Changed this to make the footer look better, having 3 items per line was messy and not that user friendly. Also, any nav list item with a list have an arrow next to it to indicate that there are more list items. List of list items are not displayed in the mobile/tablet display because to show them all looks extremely messy, and is just too many items in a footer. 
+
+Twitter feed and Google calendar not placed in centre of page for mobile and tablet views as depicted in the wireframe. Each item now just floats left.

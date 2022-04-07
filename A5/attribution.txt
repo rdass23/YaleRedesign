@@ -1,0 +1,40 @@
+Header responsiveness help:
+https://www.youtube.com/watch?v=gt8zOLQ8A0w
+
+Slider images generated from:
+https://www.pexels.com
+
+Course Images Generated from:
+https://www.pexels.com
+
+Paragraph contents generated from: 
+https://www.lipsum.com/
+
+Twitter Feed code generated from:
+https://publish.twitter.com/#
+
+Help using google calendar from:
+https://www.youtube.com/watch?v=hWLJmUIphrA
+
+Normalize Stylings:
+ https://necolas.github.io/normalize.css/
+
+Search Bar Help:
+https://www.youtube.com/watch?v=v1PeTDrw6OY
+
+Styling Help found on Youtube. 
+https://www.youtube.com/watch?v=pGHOaY4dhAA
+https://www.youtube.com/watch?v=FEmysQARWFU
+https://www.youtube.com/watch?v=8x1mO1d6-4w
+
+Font Awesome icons (menu bar, twitter, facebook, and arrow):
+https://use.fontawesome.com/releases/v5.8.1/css/all.css
+
+Creating expandable sections/getting icons for them help from:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
+
+Overall site responsiveness (breakpoints) help from: 
+https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s
+
+MOBILE/TABLET WIREFRAMES CREATED USING:
+https://mockflow.com
